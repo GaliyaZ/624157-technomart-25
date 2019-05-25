@@ -208,7 +208,10 @@ a {
 /*---------------------------------------------*/
 .footer-menu,
 .footer-list,
-.socials {
+.socials,
+.user-functions,
+.breadcrumbs,
+.product-items {
     list-style: none;
 
 }
@@ -245,3 +248,88 @@ a {
 .developed a {
     color: #ffd180;    
 }
+/*-----------------------------------------------------*/
+.user-functions a {
+    color: #32425c;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: underline;
+}
+
+.breadcrumbs a,
+.breadcrumbs li {
+    font-family: "PT Sans" Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.breadcrumbs li::before {
+    content: url("/img/icon-right-small.svg");
+}
+
+.catalog-header {
+    width: 940px;
+    height: 89px;
+    font-family: "Cuprum" Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    background-color: #f2f6f8;
+    text-transform: uppercase;
+}
+
+.filter-form legend {
+    font-family: "PT Sans" Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-form label {
+    font-family: "PT Sans" Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.show-button {
+    width: 140px;
+    height: 38px;
+    color: #000000;
+    font-family: "PT Sans" Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+.product-items a {
+    font-family: "PT Sans" Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #000000;
+}
+.product-items del {   
+    font-family: "PT Sans" Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #999999;
+}
+.price {
+    width: 141px;
+    height: 40px;
+    background-color: #ee3643;
+    color: #ffffff;
+    font-family: "PT Sans" Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
