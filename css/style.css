@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-navigation,
+.main-menu {
+    list-style: none;   
+}
+
+.dark-blue-background {
+    background-color: #293449;
+}
+
+.dark-blue-background a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.blue-background {
+    background-color: #32425c;
+}
+
+.logo {
+    width: 220px;
+    height: 47px;
+    text-align: center;
+    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+} 
+.logo a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.logo:hover,
+.logo:focus {
+    background-color: #ca2c37;
+}
+
+.logo:active {
+    background-color: #ba2732;
+}
+
+.search input {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    background-color: #293449;
+    border: 0px solid #293449;
+}
+
+.search input::placeholder {
+    color: #ffffff;
+}
+
+.search input:active {
+    background-color: #ffffff;   
+}
+
+.search input:hover, 
+.search input:focus,
+.function a:hover,
+.function a:focus {
+    background-color: #212a3a;
+}
+.heder-icons:hover,
+.heder-icons:focus {
+    opacity: 1;    
+}
+
+.function a:active {
+    background-color: #161d29;
+    opacity: 0.5;
+} 
+
+.offer {
+    background-color: #63a63e;
+}
+
+.offer:hover,
+.offer:focus {
+    background-color: #5fbb2d;
+}
+
+.offer:active {
+    background-color: #518534;
+    opacity: 0.5;
+}
+
+.heder-icons {
+    opacity: 0.3;
+}
+
+.grey-background {
+    background-color: #f4f7f9;
+}
+
+.grey-background h1 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 23px; 
+    font-style: italic;
+    font-weight: 400;
+    color: #ee3643;
+}
+
+.phone {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 21px; 
+    color: #ee3643;
+}
+
+.heder-address {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px; 
+    font-style: normal;
+    color: #818181;
+}
+
+.user-navigation a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #000000;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #ee3643;
+}
+
+.site-navigation {
+    background-color: #32425c;
+}
+.site-navigation a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #ffffff;
+}
+/*----------------------------------------------------*/
+.about h2,
+.contacts h2 {
+    font-family: "Cuprum" Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.about p,
+.contacts p {
+    font-family: "PT Sans" Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;   
+}
+
+.about ul {
+    list-style-type: none;
+}
+.about-list li::before {
+    content: url("/img/icon-login.png");
+}
+
+.about-us {
+    width: 220px;
+    height: 24px;
+}
+
+.write-us {
+    width: 300px;
+    height: 24px;
+}
+
+.site-buttons {
+    text-align: center;
+    background-color: #ee3643;
+    padding-top: 12px;
+}   
+
+.site-buttons a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+}   
+/*---------------------------------------------*/
+.footer-menu,
+.footer-list,
+.socials {
+    list-style: none;
+
+}
+
+.footer-menu a,
+.footer-list a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f1f5f7;
+}
+
+.footer-address {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f3f7f9;
+}
+
+.footer-list a {
+    color: #ffd180;
+}
+
+.copyright,
+.feedback,
+.developed {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;    
+}
+
+.feedback a,
+.developed a {
+    color: #ffd180;    
+}
