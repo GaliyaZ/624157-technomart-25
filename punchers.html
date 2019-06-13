@@ -13,9 +13,9 @@
             <div class="container">
                 <div class="header-top">
                     <a class="logo" href="index.html"><img src="img/logo.svg" width="109" height="19" alt="Логотип компании техномарт"></a>
-                    <div class="search">  
-                        <input type="search" placeholder="Поиск">
-                    </div>
+                     
+                        <input class="search" type="search" placeholder="Поиск">
+                    
                     
                         <a class="bookmarks function" href="bookmarks.html">
                             Закладки: 0
@@ -37,15 +37,15 @@
                         <address class="heder-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                     </div>
                 <div class="user-container">
-                    <ul class="user-navigation">
+                    <ul class="user-navigation user-navigation-inner">
                     <li>
-                        <a href="profile.html">
-                        <img src="img/icon-user.svg" width="20" height="18" alt="Иконка пользователя">
-                        Равшан Джамшутович
+                        <a class="profile" href="profile.html">
+                            Равшан Джамшутович
                         </a>
                     </li>
-                    <li><a href="logout.html">
-                        <img src="img/icon-logout.svg" width="20" height="17" alt="Выйти из личного кабинета">
+                    <li>
+                        <a class="logout" href="logout.html">
+                        
                         </a>
                     </li>
                 </ul>
@@ -59,16 +59,17 @@
             
             <nav  class="site-navigation">
                 <ul class="main-menu">
-                    <li><a href="main.html">Главная</a></li>
+                    <li><a class="first-main-menu" href="main.html">Главная</a></li>
                     <li><a href="company.html">Компания</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="news.html">Новости</a></li>
                     <li><a href="offers.html">Спецпредложения</a></li>
                     <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a class="last-main-menu" href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>  
-            </div></div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="container">
@@ -81,39 +82,73 @@
                 <li>Перфораторы</li>
             </ul>
             <h2 class="catalog-header">Перфораторы</h2>
-        <div class="catalog"> 
+            <div class="catalog"> 
             <section class="filters">
                 <h3 class="filters-name">Фильтр:</h3>
                 <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
-                    <fieldset class="producer-checkbox">
+                    <fieldset class="field cost">
+                        <legend>Цена:</legend>
+                            <input class="cost-filter" type="number" name="min" placeholder="0">
+                            <input class="cost-filter" type="number" name="max" placeholder="30000">
+                    </fieldset>
+                    <hr class="filter-line">
+                    <fieldset class="field producer-checkbox">
                         <legend>Производители:</legend>
                         <ul class="producer">
                             <li>
-                                <label><input class="filter-produser" type="checkbox" name="BOSCH" checked>BOSCH</label>
+                                <label class="checkbox-wrapper">
+                                    <input class="filter-produser" type="checkbox" name="BOSCH" checked>
+                                    <div class="custom-checkbox"></div>
+                                    BOSCH
+                                </label>
                             </li>
                             <li>
-                                <label><input class="filter-produser" type="checkbox" name="interskol">Интерскол</label>
+                                <label class="checkbox-wrapper">
+                                    <input class="filter-produser" type="checkbox" name="interskol">
+                                    <div class="custom-checkbox"></div>
+                                    Интерскол
+                                </label>
                             </li>
                             <li>
-                                <label><input class="filter-produser" type="checkbox" name="Makita" checked>Makita</label>
+                                <label class="checkbox-wrapper">
+                                    <input class="filter-produser" type="checkbox" name="Makita" checked>
+                                    <div class="custom-checkbox"></div>
+                                    Makita
+                                </label>
                             </li>
                             <li>
-                                <label><input class="filter-produser" type="checkbox" name="Dewalt">Dewalt</label>
+                                <label class="checkbox-wrapper">
+                                    <input class="filter-produser" type="checkbox" name="Dewalt">
+                                    <div class="custom-checkbox"></div>
+                                    Dewalt
+                                </label>
                             </li>
                             <li>
-                                <label><input class="filter-produser" type="checkbox" name="Hitachi">Hitachi</label>
+                                <label class="checkbox-wrapper">
+                                    <input class="filter-produser" type="checkbox" name="Hitachi">
+                                    <div class="custom-checkbox"></div>
+                                    Hitachi
+                                </label>
                             </li>
                         </ul>
                     </fieldset>    
-                    
-                    <fieldset class="power-radio">  
+                    <hr class="filter-line">
+                    <fieldset class="field power-radio">  
                         <legend>Питание</legend>
                         <ul class="power">
                             <li>
-                                <label><input class="filter-power" type="radio" name="power-filter" value="battery" checked>Аккумуляторные</label>
+                                <label class="radio-wrapper">
+                                    <input class="filter-power" type="radio" name="power-filter" value="battery" checked>
+                                    <div class="custom-radio"></div>
+                                    Аккумуляторные
+                                </label>
                             </li>
                             <li>
-                                <label><input class="filter-power" type="radio" name="power-filter" value="network">Сетевые</label>
+                                <label class="radio-wrapper">
+                                    <input class="filter-power" type="radio" name="power-filter" value="network">
+                                    <div class="custom-radio"></div>
+                                    Сетевые
+                                </label>
                             </li>
                         </ul>
                     </fieldset> 
@@ -122,12 +157,14 @@
             </section>
             
             <section class="products">
-                <!--<div class="sorting">
-                    <h2>Сортировка:</h2>
-                    
-                </div>-->
+                <div class="sorting">
+                    <h3 class="sorting-name">Сортировка:</h3>
+                    <a>По цене</a>
+                    <a>По типу</a>
+                    <a>По функционалу</a>
+                </div>
                 <ul class="product-items">
-                    <div class="row">
+                    <!--<div class="row">-->
                     <li class="item">
                         <div class="image">
                             <img src="img/Perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора BOSCH BFG 3000">
@@ -169,14 +206,7 @@
                                 Купить
                             </a>
 
-                            <form class="add-form" method="GET" action="https://echo.htmlacademy.ru">
-                                <h4 class="visually hidden">Добавление товара</h4>
-                                <p><img src="img/checked.jpg" width="66" height="66" alt="Действие выполнено">
-                                Товар добавлен в корзину!</p>
-                                <button class="button" type="submit">Оформить заказ</button>
-                                <button class="add-close-button" type="button">Продолжить покупки</button>
-                                <button class="add-close-button" type="button">Закрыть</button>
-                            </form>
+                            
 
                             <button class="bookmark-button" type="button">В закладки</button>
                         </div>
@@ -276,35 +306,40 @@
                         <div class="discount"></div>
                         <div class="price">12500 Р.</div>
                     </li>
-                </div>
-                </ul>
-              <!--  <ul class="pagination-list">
-                    <li><a href="#">1</a></li>
+                <!--</div>-->
+                
+            </ul>
+                <ul class="pagination-list">
+                    <li><a class="current-pagination" href="#">1</a></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
-                    <li><a href="#">Следующая</a></li>
-                </ul>-->
+                    <li><a class="last-pagination" href="#">Следующая</a></li>
+                </ul>
             </section>
-           <!-- <div class="about">
-                <h2 class="about-punchers">Пара слов о перфораторах</h2>
-                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления
-                     и долбления отверстий в кирпиче, бетоне и камне.
-                    Существуют электромеханические и пневматические перфораторы. Современные
-                    модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
-                    В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут 
-                    совмещены отбойный молоток и ударная дрель.
-                </p>
-            </div>-->
-        
-        </div>  
+            </div>
         </div>
+            <div class="grey-background">
+                <div class="container">
+                    <h2 class="about-punchers-name">Пара слов о перфораторах</h2>
+                    <p class="about-punchers-content">Перфоратор — универсальный строительный инструмент. Предназначен для сверления
+                        и долбления отверстий в кирпиче, бетоне и камне.
+                        Существуют электромеханические и пневматические перфораторы. Современные
+                        модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+                        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут 
+                        совмещены отбойный молоток и ударная дрель.
+                    </p>
+                </div>    
+            </div>
+        
+          
+        
     </main>
     <footer>
         <div class="blue-background">
         <div class="container">
             <ul class="footer-menu">
                 <li class="logo-item">
-                    <a class="logo" href="index.html"><img src="img/logo.svg" width="109" height="19" alt="Логотип компании техномарт"></a>
+                    <a class="footer-logo" href="index.html"><img src="img/logo.svg" width="140" height="23" alt="Логотип компании техномарт"></a>
                 </li>
                 <li><a href="company.html">Компания</a></li>
                 <li><a href="news.html">Новости</a></li>
@@ -351,5 +386,14 @@
             </div>
         </div>
     </footer>
+    <form class="modal add-form" method="GET" action="https://echo.htmlacademy.ru">
+        <h4 class="visually-hidden">Добавление товара</h4>
+        <p class="form-wrapper-top add-wrapper-top">Товар добавлен в корзину!</p>
+        <div class="form-wrapper">
+            <button class="form-button checkout" type="submit">Оформить заказ</button>
+            <button class="form-button add-continue-button" type="button">Продолжить покупки</button>
+        </div>
+        <button class="close-button" type="button">Закрыть</button>
+    </form>
   </body>
 </html>

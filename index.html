@@ -13,17 +13,11 @@
           <div class="container"> 
               <div class="header-top">
                   <a class="logo" href="index.html"><img src="img/logo.svg" width="109" height="19" alt="Логотип компании техномарт"></a>
-                  <div class="search">  
-                    <!--<img class="heder-icons" src="img/icon-search.png" width="17" height="17" alt="Поиск">-->
-                    <input type="search" placeholder="Поиск">
-                  </div>
-              
+                  <input class="search" type="search" placeholder="Поиск">
                 <a class="bookmarks function" href="bookmarks.html">
                   
                 Закладки: 0
               </a>
-          
-           
               <a class="card function" href="card.html">
                 Корзина: 0
               </a>
@@ -41,19 +35,19 @@
           <address class="heder-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
         <ul class="user-navigation">
-          <li><a class="login" href="login.html">Войти</a></li>
-          <li><a href="login.html">Регистрация</a></li>
+          <li><a class="panel login" href="login.html">Войти</a></li>
+          <li><a class="panel" href="login.html">Регистрация</a></li>
         </ul>
         </div>
           <nav  class="site-navigation">
             <ul class="main-menu">
-              <li><a href="main.html">Главная</a></li>
+              <li><a class="first-main-menu" href="main.html">Главная</a></li>
               <li><a href="company.html">Компания</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="punchers.html">Каталог</a></li>
               <li><a href="news.html">Новости</a></li>
               <li><a href="offers.html">Спецпредложения</a></li>
               <li><a href="delivery.html">Доставка</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
+              <li><a class="last-main-menu" href="contacts.html">Контакты</a></li>
             </ul>
            </nav>  
           </div>  
@@ -211,35 +205,11 @@
         </div>
         <div class="contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="map.html"><img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
-          <section class="map">
-            <h3 class="visually-hidden">Как до нас добраться</h3>
-            <form>
-              <img src="img/map-form.jpg" width="940" height="447" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-              <button class="write-close-button" type="button">Закрыть</button>   
-            </form>          
-          </section>
+          <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+          <a href="map.html"><img class="map-image" src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+          
           <div class="write-us site-buttons"><a href="location.html">Заблудились? Напишите нам!</a></div>
-          <section class="write">
-            <h3 class="visually-hidden">Обратная связь</h3>
-            <form class="write-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p>
-                <label for="user-name">Ваше имя:</label>
-                <input type="text" name="username" placeholder="Имя Фамилия" id="user-name">
-                
-                <label for="user-email">Ваш e-mail:</label>
-                <input type="email" name="useremail" placeholder="email@example.com" id="user-email">
-              </p>
-              <p>
-                <label for="user-message">Текст письма:</label>
-                <textarea id="user-message" name="usermessage">В свободной форме</textarea>
-                <!--<input type="textarea" name="usermessage" placeholder="В свободной форме" id="user-message">-->
-              </p>  
-              <button class="button" type="submit">Отправить</button>                         
-            </form>
-            <button class="write-close-button" type="button">Закрыть</button>
-          </section>
+          
         </div>
       </div>  
     </main>
@@ -248,7 +218,7 @@
         <div class="container">
         <ul class="footer-menu">
           <li class="logo-item">
-            <a class="logo" href="index.html"><img src="img/logo.svg" width="109" height="19" alt="Логотип компании техномарт"></a>
+            <a class="footer-logo" href="index.html"><img src="img/logo.svg" width="140" height="23" alt="Логотип компании техномарт"></a>
           </li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
@@ -295,5 +265,36 @@
         </div>
       </div>
     </footer>
+    <section class="write">
+        <h3 class="visually-hidden">Обратная связь</h3>
+        <form class="modal write-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form-wrapper-top write-wrapper-top">
+            <p>
+              <label>Ваше имя:</label><br>
+              <input class="write-input" type="text" name="username" placeholder="Имя Фамилия">
+            </p>
+            <p> 
+              <label>Ваш e-mail:</label><br>
+              <input class="write-input" type="email" name="useremail" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="user-message">Текст письма:</label>
+              <textarea id="user-message" name="usermessage">В свободной форме</textarea>
+              <!--<input type="textarea" name="usermessage" placeholder="В свободной форме" id="user-message">-->
+            </p>  
+          </div>
+          <div class="form-wrapper write-wrapper">
+            <button class="form-button write-button" type="submit">Отправить</button> 
+          </div> 
+          <button class="close-button" type="button">Закрыть</button>                       
+        </form>
+      </section>
+      <section class="map">
+          <h3 class="visually-hidden">Как до нас добраться</h3>
+          <form class="map-form">
+            <img src="img/map-form.jpg" width="940" height="447" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            <button class="close-button" type="button">Закрыть</button>   
+          </form>          
+        </section>
   </body>
 </html>
