@@ -1170,7 +1170,10 @@ image img {
     border: 20px solid #ffffff;
     border-left-color: #ee3643;
 }
-.product-items .item:nth-child(3n) {
+.inner-products .item:nth-child(3n) {
+    margin-right: 0;
+}
+.popular-products .item:nth-child(4n) {
     margin-right: 0;
 }
 .thumb-wrapper {
