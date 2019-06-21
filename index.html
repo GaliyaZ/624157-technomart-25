@@ -41,7 +41,7 @@
         </div>
           <nav  class="site-navigation">
             <ul class="main-menu">
-              <li><a class="first-main-menu" href="main.html">Главная</a></li>
+              <li><a class="first-main-menu" href="index.html">Главная</a></li>
               <li><a href="company.html">Компания</a></li>
               <li><a href="punchers.html">Каталог</a></li>
               <li><a href="news.html">Новости</a></li>
@@ -53,37 +53,55 @@
           </div>  
       </div>
     </header>
-    <main>
-     <!-- <div class="advertising">
-        <ul class="advertis-list">
-          <li>
-            <p>Материалы</p>
-            <a href="catalog.html">На любой вкус</a>
-          </li>
-          <li>
-            <p>Инструмент</p>
-            <a href="catalog.html">На все случаи жизни</a>
-          </li>
-          <li>
-            <p>Техника</p>
-            <a href="catalog.html">Для стройки</a>
-          </li>
-          <li>
-            <p>Скидки 50%</p>
-            <a href="catalog.html">На 350 товаров</a>
-          </li>
-          <li>
-            <p>Доставка</p>
-            <a href="catalog.html">Бесплатно</a>
-          </li>
-          <li class="slider">
-            <p class="slider-name">Дрели</p>
-            <p>Соседям на радость!</p>
-            <a href="catalog.html">Открыть каталог</a>
-          </li>
-        </ul>
-      </div>
-      <section class="popular">
+    <main class="main">
+      <div class="container">        
+            <div class="advertis-top-list">
+              <div class="tile-materials">
+                <p class="tile-text">Материалы</p>
+                <div class="new new-flag">новинка</div>
+                <a class="site-buttons tile-button material-button" href="catalog.html">На любой вкус</a>
+              </div>
+              <div class="tile-instrument">
+                <p class="tile-text"> Инструмент</p>
+                <a class="site-buttons tile-button instrument-button" href="catalog.html">На все случаи</a>
+              </div>
+              <div class="tile-equipment">
+                <p class="tile-text">Техника</p>
+                <a class="site-buttons tile-button ecuipment-button" href="catalog.html">Для стройки</a>
+              </div>
+            </div>
+            <div class="promo-wrapper">
+            <section class="slider">
+              <ul class="slider-list">
+                <li class="slider-item">
+                  <h3 class="slider-name">Перфораторы</h3>
+                  <p class="slider-text">Настоящие мужские игрушки</p>
+                </li>
+                <li class="slider-item">
+                    <h3 class="slider-name">Дрели</h3>
+                    <p class="slider-text">Cоседям на радость!</p>
+                </li>
+              </ul>
+              <ul class="slider-control">
+                <li></li>
+                <li class="active"></li>
+              </ul>
+              <a class="site-buttons slider-button" href="catalog.html">Открыть каталог</a>
+              <button class="slider-navigation slider-button-back" type="button">Назад</button>
+              <button class="slider-navigation slider-button-next" type="button">Вперед</button>
+            </section>
+            <div class="advertis-bottom-list">
+              <div class="tile-sale">
+                <p class="tile-text">Скидки 50%</p>
+                <a class="site-buttons tile-button sale-button" href="catalog.html">На 350 товаров</a>
+              </div>
+              <div class="tile-delivery">
+                <p class="tile-text">Доставка</p>
+                <a class="site-buttons tile-button delivery-button" href="catalog.html">Бесплатно</a>
+              </div>
+            </div>
+          </div> 
+      <!--<section class="popular">
         <h2>Популярные товары</h2>
         <a href="catalog.html">Все популярные товары</a>
         <ul class="products">
@@ -111,8 +129,8 @@
             <span>25500</span>
           </li>
         </ul>
-      </section>
-      <section class="producers">
+      </section>-->
+      <!--<section class="producers">
         <h2>Популярные производители:</h2>
         <a href="catalog.html">Все производители</a>
         <div>  
@@ -160,8 +178,9 @@
           </li>
           </ul>
         </div> 
-      </section>
-      <section class="servises">
+      </section>-->
+      </div>
+      <!--<section class="servises">
         <h2 class="servis-head">Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -201,15 +220,14 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <div class="about-us site-buttons"><a href="about.html">Подробнее о компании</a></div>
+        <a class="site-buttons about-us" href="about.html">Подробнее о компании</a>
         </div>
         <div class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
           <a href="map.html"><img class="map-image" src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
           
-          <div class="write-us site-buttons"><a href="location.html">Заблудились? Напишите нам!</a></div>
-          
+          <a class="site-buttons write-us" href="location.html">Заблудились? Напишите нам!</a>
         </div>
       </div>  
     </main>
