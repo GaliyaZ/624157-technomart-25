@@ -102,8 +102,10 @@
             </div>
           </div> 
       <section class="popular">
-        <h2>Популярные товары</h2>
-        <a href="catalog.html">Все популярные товары</a>
+        <div class="popular-header">
+          <h2 class="popular-name">Популярные товары</h2>
+          <a class="site-buttons popular-button" href="punchers.html">Все популярные товары</a>
+        </div>
         <ul  class="product-items popular-products">
           <li class="item">
             <div class="image">
@@ -168,79 +170,91 @@
           </li>  
         </ul>
       </section>
-      <!--<section class="producers">
-        <h2>Популярные производители:</h2>
-        <a href="catalog.html">Все производители</a>
-        <div>  
-          <ul class="produsers-item">
-          <li>
-            <img src="bosch.svg" alt="Логотип BOSCH">
-            <a href="https://www.bosch.ru/">
-              <h3>Перфоратор BOSCH BFG 9000</h3>
-          </a>
-          </li>
-          <li>  
-            <a href="https://makita.ru/">
-              <img src="makita.svg" alt="Логотип Makita">
+      <section class="produsers">
+        <div class="produser-header">
+          <h2 class="produsers-name">Популярные производители:</h2>
+          <a class="site-buttons produser-button" href="catalog.html">Все производители</a>
+        </div>
+        <ul class="produsers-items">
+          <li class="produser-item">
+            <a href="https://www.bosch.ru/">  
+              <img src="img/bosch.png" alt="Логотип BOSCH">
             </a>
           </li>
-          <li> 
+          <li class="produser-item">  
+            <a class="image" href="https://makita.ru/">
+              <img src="img/Makita.png" alt="Логотип Makita">
+            </a>
+          </li>
+          <li class="produser-item"> 
             <a href="https://shop.dewalt.ru/">
-              <img src="dewalt.svg" alt="Логотип dewalt">
+              <img src="img/DeWALT.png" alt="Логотип dewalt">
             </a>
           </li>
-          <li>  
+          <li class="produser-item">  
             <a href="http://www.interskol.ru/">
-              <img src="interskol.svg" alt="Логотип интерскол">
+              <img src="img/interskol.png" alt="Логотип интерскол">
             </a>
           </li> 
-          <li> 
+          <li class="produser-item"> 
             <a href="http://www.hitachi.com/">
-              <img src="hitachi.svg" alt="Логотип hitachi">
+              <img src="img/Hitachi.png" alt="Логотип hitachi">
             </a>
           </li> 
-          <li> 
+          <li class="produser-item"> 
             <a href="https://www.lg.com/ru">
-              <img src="lg.svg" alt="Логотип lg">
+              <img src="img/LG.png" alt="Логотип lg">
             </a>   
           </li>
-          <li> 
+          <li class="produser-item"> 
             <a href="https://www.aegps.com/">
-              <img src="aegps.svg" alt="Логотип aeg power solutions">
+              <img src="img/AEG.png" alt="Логотип aeg power solutions">
             </a>   
           </li>
-          <li> 
+          <li class="produser-item"> 
             <a href="https://www.metabo.com/ru/ru/">
-              <img src="metabo.svg" alt="Логотип metabo">
+              <img src="img/Metabo.png" alt="Логотип metabo">
             </a>   
-          </li>
-          </ul>
-        </div> 
-      </section>-->
-      </div>
-      <!--<section class="servises">
-        <h2 class="servis-head">Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <ul class="servis-list">
-          <li>
-            Доставка
-          </li>
-          <li>
-            Гарантия
-          </li>
-          <li>
-            Кредит
           </li>
         </ul>
-        <div class="servis-item">
-          <h3 class="delivering">Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
+      </section>
+      </div>
+      <section class="servises">
+        <div class="servises-wrapper container">
+        <h2 class="servis-name">Сервисы</h2>
+        <p class="servis-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+        <div class="servis-control-wrapper">
+          <ul class="servis-control">
+            <li class="active">Доставка</li>
+            <li>Гарантия</li>
+            <li>Кредит</li>
+          </ul>
+        </div>
+        <ul class="servis-list">
+          <li class="servis-item">
+            <h3 class="delivering">Доставка</h3>
+            <p class="servis-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
             Ведь мы неплохо заработаем, 
             поднимая его на ваш этаж!</p>
-        </div>
-      </section>-->
+          </li>
+          <li class="servis-item">
+            <h3 class="delivering">Гарантия</h3>
+            <p class="servis-text">Если купленный у нас товар поломается или заискрит, 
+            а также в случае пожара, спровоцированного его возгаранием,  
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
+            сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+          </li>
+          <li class="servis-item">
+            <h3 class="delivering">Кредит</h3>
+            <p class="servis-text">Залезть в долговую яму стало проще! 
+            Кредитные консультанты придут вам на помощь.</p>
+            <a class="site-buttons request-button" href="send-request.html">Отправить заявку</a>
+          </li>
+        </ul>
+        </div>  
+      </section>
       <div class="container wrapper">
         <div class="about">
         <h2>Компания «Техномарт»</h2>

@@ -498,6 +498,8 @@ input[type="radio"].visually-hidden {
     height: 266px;
     position: relative;
 }
+.servis-control,
+.servis-list,
 .slider-list {
     list-style: none;
     margin: 0;
@@ -610,6 +612,98 @@ input[type="radio"].visually-hidden {
     right: 25px;
     background: url("./../img/icon-right.png") no-repeat 0 0;
     }
+.produser-header,
+.popular-header {
+    background-color: #f9f5f0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.produser-button,
+.popular-button {
+    margin: 25px 23px 25px 0;
+    display: block;
+    width: 253px;
+}
+.produsers-name,
+.popular-name {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000; 
+    text-transform: uppercase;
+    padding: 0 0 0 29px;
+    margin: 0;
+}
+.produser-item image {
+    width: 220px;
+    height: 145px;
+}
+.produsers-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.produser-item {
+    margin: 0 20px 20px 0;
+}
+.produser-item:nth-child(4n) {
+    margin-right: 0;
+}
+.produsers {
+    margin-bottom: 65px;
+}
+.servises {
+    background-color: #f4f8fa;
+}
+.servises-wrapper {
+    background: url("./../img/truck.png") no-repeat 479px 285px;
+    background-position: right bottom;
+    padding-top: 38px;
+    padding-bottom: 98px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.servis-list {
+    padding-bottom: 60px; 
+}
+.servis-item {
+    display: none;
+}
+.servis-item:nth-child(1) {
+    display: block;
+}
+.servis-control li {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 14px 0 15px 23px;
+
+    width: 217px;
+    border: none;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
+    background-color: #32425c;
+}
+.servis-control .active {
+    color: #32425c;
+    background-color: #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.servis-control {
+    padding: 48px 0;
+    background: url("./../img/shadow.png") no-repeat 10px 279px;
+    background-position: 230px center;
+    z-index: 5;
+}
+
+
+
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -627,6 +721,7 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     width: 300px;
 }
+.servis-name,
 .about h2,
 .contacts h2 {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -637,6 +732,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 35px 0;
 }
+.servis-text,
 .about p,
 .contacts p {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -798,6 +894,7 @@ input[type="radio"].visually-hidden {
 .socials,
 .user-functions,
 .breadcrumbs,
+.produsers-items,
 .product-items {
     list-style: none;
     margin: 0;
