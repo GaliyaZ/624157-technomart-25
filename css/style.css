@@ -658,20 +658,20 @@ input[type="radio"].visually-hidden {
     background-color: #f4f8fa;
 }
 .servises-wrapper {
-    background: url("./../img/truck.png") no-repeat 479px 285px;
-    background-position: right bottom;
     padding-top: 38px;
-    padding-bottom: 98px;
+    padding-bottom: 50px;
     margin-top: 0;
     margin-bottom: 0;
 }
 .servis-list {
-    padding-bottom: 60px; 
+    width: 390px; 
+    padding: 48px 0 10px 10px;
 }
 .servis-item {
     display: none;
+    position: relative;
 }
-.servis-item:nth-child(1) {
+.servis-item:nth-child(3) {
     display: block;
 }
 .servis-control li {
@@ -695,11 +695,74 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #ffffff;
 }
 .servis-control {
+    width: 310px;
     padding: 48px 0;
-    background: url("./../img/shadow.png") no-repeat 10px 279px;
-    background-position: 230px center;
-    z-index: 5;
+    position: relative;
 }
+.servis-control::before {
+    content: "";
+    position: absolute;
+    background: url("./../img/shadow.png") no-repeat;
+    width: 10px;
+    height: 279px;
+    top: 0;
+    left: 230px;
+    z-index: 4;
+}
+.servis-delivery::before {
+    content: "";
+    position: absolute;
+    background: url("./../img/truck.png") no-repeat;
+    width: 479px;
+    height: 285px;
+    top: 0;
+    right: -250px;
+}
+.servis-warranty::before {
+    content: "";
+    position: absolute;
+    background: url("./../img/medal.png") no-repeat;
+    width: 389px;
+    height: 283px;
+    top: 0;
+    right: -250px;
+}
+/*.servis-text {
+    z-index: 4;
+}*/
+.servis-delivery-text {
+    width: 290px;
+}
+.servis-lists-wrapper {
+    display: flex;
+}
+.servis-item-name {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #32425c;
+    margin: 0;
+    padding-bottom: 25px;
+}
+.request-button {
+    display: block;
+    width: 195px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
