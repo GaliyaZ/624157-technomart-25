@@ -15,9 +15,8 @@
                   <a class="logo" href="index.html"><img src="img/logo.svg" width="109" height="19" alt="Логотип компании техномарт"></a>
                   <input class="search" type="search" placeholder="Поиск">
                 <a class="bookmarks function" href="bookmarks.html">
-                  
                 Закладки: 0
-              </a>
+              ` </a>
               <a class="card function" href="card.html">
                 Корзина: 0
               </a>
@@ -280,7 +279,7 @@
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
           <a href="map.html"><img class="map-image" src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
           
-          <a class="site-buttons write-us" href="location.html">Заблудились? Напишите нам!</a>
+          <a class="site-buttons write-us" href="write-us.html">Заблудились? Напишите нам!</a>
         </div>
       </div>  
     </main>
@@ -293,7 +292,7 @@
           </li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="punchers.html">Каталог</a></li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>        
         </ul>
@@ -340,22 +339,24 @@
         <h3 class="visually-hidden">Обратная связь</h3>
         <form class="modal write-form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form-wrapper-top write-wrapper-top">
-            <p>
-              <label>Ваше имя:</label><br>
+            <div class="write-input-wrapper name-wrapper">
+              <label>Ваше имя:
               <input class="write-input" type="text" name="username" placeholder="Имя Фамилия">
-            </p>
-            <p> 
-              <label>Ваш e-mail:</label><br>
+              </label>
+            </div>
+            <div class="write-input-wrapper email-wrapper">  
+              <label>Ваш e-mail:
               <input class="write-input" type="email" name="useremail" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="user-message">Текст письма:</label>
+              </label>
+            </div> 
+            <div class="mail-text-wrapper">
+              <label for="user-message">Текст письма:
               <textarea id="user-message" name="usermessage">В свободной форме</textarea>
-              <!--<input type="textarea" name="usermessage" placeholder="В свободной форме" id="user-message">-->
-            </p>  
+              </label><!--<input type="textarea" name="usermessage" placeholder="В свободной форме" id="user-message">-->
+            </div>  
           </div>
           <div class="form-wrapper write-wrapper">
-            <button class="form-button write-button" type="submit">Отправить</button> 
+            <button class="write-button" type="submit">Отправить</button> 
           </div> 
           <button class="close-button" type="button">Закрыть</button>                       
         </form>
