@@ -54,7 +54,7 @@ closeBuy.addEventListener("click", function(evt) {
 }); 
 i=0;
 /*фон закладок и корзины*/
-for(i = 0; i < addBookmark.length; i++){ // проходим циклом по всем элементам объекта
+for(i = 0; i < addBookmark.length; i++){
   addBookmark[i].addEventListener("click", function(evt) {
   evt.preventDefault();
   bookmark.classList.add("function-background");

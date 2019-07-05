@@ -188,7 +188,6 @@ input[type="radio"].visually-hidden {
 
 .card {
 	padding-left: 48px;
-    /*width: 147px;*/;
 }
 
 .function-background {
@@ -291,7 +290,6 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	align-items: baseline;
 	margin: 0 0 0 7px;
-	;
     padding: 0;
 	position: relative;
 }
@@ -2071,7 +2069,6 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	padding: 64px 0 12px 0;
 	letter-spacing: 0.2px;
-	;
     margin: 0;
 }
 
