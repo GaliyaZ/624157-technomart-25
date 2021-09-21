@@ -1,4 +1,6 @@
-# Личный проект «Техномарт»
+# Учебный проект «Техномарт»
+
+https://galiyaz.github.io/624157-technomart-25/index.html
 
 * Студент: [Галия Зайдуллина](https://up.htmlacademy.ru/htmlcss/25/user/624157).
 * Наставник: `Юрий Татаринцев`.
@@ -10,7 +12,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 ---
 
-### Памятка
+### Памятка для студента
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
